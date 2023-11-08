@@ -5,5 +5,6 @@ use App\Http\Controllers\ProdutoController;
 
 
 
-Route::get('/', [ProdutoController::class, 'index'] );
+Route::get('/', [ProdutoController::class, 'index'])->name('produto.index');
+Route::get('/produto/{id?}', [ProdutoController::class, 'show'])->name('produto.show');
 
