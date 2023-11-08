@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/teste', function () {
-    return view('teste');
-});
+
 
 Route::any('any', function () {
     return "Permite todo tipo de acesso HTTP";
@@ -32,3 +30,6 @@ Route::match(['put', 'delete'], '/match', function () {
 Route::get('produto/{id}/{cat?}', function ($id, $cat = '') {
     return "o id do produto é: ".$id .", <br>". "A categoria é: ".$cat;
 });
+
+Route::redirect('/sobre', '/teste', 301);
+Route::view('/teste', 'site/teste');
