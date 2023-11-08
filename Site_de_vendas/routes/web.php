@@ -33,3 +33,12 @@ Route::get('produto/{id}/{cat?}', function ($id, $cat = '') {
 
 Route::redirect('/sobre', '/teste', 301);
 Route::view('/teste', 'site/teste');
+
+
+Route::get('/news', function(){
+    return view('news');
+})->name('noticias');
+
+Route::get('/novidades', function(){
+    return redirect()->route('noticias');
+});
