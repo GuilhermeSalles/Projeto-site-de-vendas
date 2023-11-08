@@ -20,3 +20,10 @@ Route::get('/teste', function () {
     return view('teste');
 });
 
+Route::any('any', function () {
+    return "Permite todo tipo de acesso HTTP";
+});
+
+Route::match(['put', 'delete'], '/match', function () {
+    return "Permite apenas acessos definidos";
+});
