@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title', 'Essa é pagina Home')
+@section('title', 'Categoria')
 
 @section('conteudo')
 
