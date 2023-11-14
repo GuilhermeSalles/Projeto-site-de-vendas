@@ -30,7 +30,7 @@
                 <li><a href="{{ route('site.index') }}">Home</a></li>
                 <li><a href="" class="dropdown-trigger" data-target="dropdown1">Categorias <i
                             class="material-icons right">expand_more</i> </a></li>
-                <li><a href="{{ route('site.carrinho') }}">Carrinho<span class="new badge white" style="color: red; font-weight: 900; border-radius: 0px" data-badge-caption="">{{ \Cart::getContent()->count() }}</span></a></li>
+                <li><a href="{{ route('site.carrinho') }}">Carrinho<span class="new badge white" style="color: red; font-weight: 900; border-radius: 100px" data-badge-caption="">{{ \Cart::getContent()->count() }}</span></a></li>
             </ul>
         </div>
     </nav>
