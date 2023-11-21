@@ -18,7 +18,7 @@ class CarrinhoController extends Controller
             'id' => $request->id,
             'name' => $request->name,
             'price' => $request->price,
-            'quantity' => $request->qtd,
+            'quantity' => abs($request->qtd),
             'attributes' => array(
                 'image' => $request->img
             )
@@ -37,7 +37,7 @@ class CarrinhoController extends Controller
         \Cart::update($request->id, [
             'quantity' => [
                 'relative' => false,
-                'value' => $request->quantity,
+                'value' => abs($request->quantity),
             ],
         ]);
         return redirect()->route('site.carrinho')->with('sucesso', 'Produto atualizado no carrinho com sucesso!');
