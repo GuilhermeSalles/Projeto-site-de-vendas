@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
 
+    <link rel="icon" type="image/x-icon" href="https://gradle.org/images/gradle-400x400.png">
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,7 +28,7 @@
     <nav class="red">
         <div class="nav-wrapper container ">
             <a href="#" class="brand-logo center">Curso Laravel</a>
-            <ul id="nav-mobile" class="left">
+            <ul id="nav-mobile" class="left" class="right hide-on-med-and-down">
                 <li><a href="{{ route('site.index') }}">Home</a></li>
                 <li><a href="" class="dropdown-trigger" data-target="dropdown1">Categorias <i
                             class="material-icons right">expand_more</i> </a></li>

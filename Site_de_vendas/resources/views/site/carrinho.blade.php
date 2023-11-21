@@ -32,20 +32,26 @@
                                 class="responsive-img circle"></td>
                         <td>{{ $item->name }}</td>
                         <td>R$ {{ number_format($item->price, 2, ',', '.') }}</td>
-                        <td><input style="width: 40px; font-weight: 900;" class="white center" type="number" name="quantity"
-                                value="{{ $item->quantity }}"></td>
-                        <td>
 
-                            <button class="btn-floating waves-effect waves-light orange"><i
-                                    class="material-icons">refresh</i></button>
+                        {{-- Formulario Atualizar Carrinho --}}
+                        <form action="{{ route('site.atualizacarrinho') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <input type="hidden" name="id" value="{{ $item->id }}">
+                            <td><input style="width: 40px; font-weight: 900;" class="white center" type="number"
+                                    name="quantity" value="{{ $item->quantity }}"></td>
+                            <td>
 
+                                <button class="btn-floating waves-effect waves-light orange"><i
+                                        class="material-icons">refresh</i></button>
+                        </form>
 
-                            <form action="{{ route('site.removeCarrinho') }}" method="POST" enctype="multipart/form-data">
-                                @csrf
-                                <input type="hidden" name="id" value="{{ $item->id }}">
-                                <button class="btn-floating waves-effect waves-light red"><i
-                                        class="material-icons">delete</i></button>
-                            </form>
+                        {{-- Formulario remove Carrinho --}}
+                        <form action="{{ route('site.removeCarrinho') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <input type="hidden" name="id" value="{{ $item->id }}">
+                            <button class="btn-floating waves-effect waves-light red"><i
+                                    class="material-icons">delete</i></button>
+                        </form>
 
 
                         </td>
