@@ -14,6 +14,15 @@
             </div>
         @endif
 
+        @if ($mensagem = Session::get('aviso'))
+            <div class="card blue darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Tudo bem!</span>
+                    <p> {{ $mensagem }}</p>
+                </div>
+            </div>
+        @endif
+
         <h5>Seu carrinho possui {{ $itens->count() }} produtos.</h5>
         <table>
             <thead class="stripped">
@@ -66,8 +75,8 @@
         <div class="row container center">
             <button class="btn waves-effect waves-light blue">Continuar comprando <i
                     class="material-icons right">arrow_back</i></button>
-            <button class="btn waves-effect waves-light blue">Limpar carrinho <i
-                    class="material-icons right">clear</i></button>
+            <a href="{{ route('site.limparcarrinho') }}" class="btn waves-effect waves-light blue">Limpar carrinho <i
+                    class="material-icons right">clear</i></a>
             <button class="btn waves-effect waves-light green">Finalizar Pedido <i
                     class="material-icons right">check</i></button>
         </div>
