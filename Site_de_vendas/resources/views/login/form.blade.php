@@ -20,7 +20,7 @@
 
     E-mail <br> <input type="email" name="email" id="email"> <br>
     Senha <br> <input type="password" name="password" id="password"> <br>
-
+    <input type="checkbox" name="remember"> Lembrar-me
     <button type="submit"> Entrar </button>
 
 </form>
