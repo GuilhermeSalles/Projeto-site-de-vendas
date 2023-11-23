@@ -28,6 +28,7 @@
     <ul id='dropdown2' class='dropdown-content'>
 
         <li><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ route('login.logout') }}">Sair</a></li>
 
     </ul>
 
@@ -47,9 +48,13 @@
             {{-- Menu user --}}
             <ul id="nav-mobile" class="right" class="right hide-on-med-and-down">
 
-                <li><a href="" class="dropdown-trigger" data-target="dropdown2">Olá
-                        {{ auth()->user()->firstName }}! <i class="material-icons right">expand_more</i> </a></li>
+                @auth
+                    <li><a href="" class="dropdown-trigger" data-target="dropdown2">Olá
+                            {{ auth()->user()->firstName }}! <i class="material-icons right">expand_more</i> </a></li>
+                @else
+                    <li><a href="{{ route('login.form') }}">Login<i class="material-icons right">lock</i> </a></li>
 
+                @endauth
             </ul>
         </div>
     </nav>
