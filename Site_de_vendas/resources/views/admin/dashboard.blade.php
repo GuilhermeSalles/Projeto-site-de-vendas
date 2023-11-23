@@ -1,1 +1,1 @@
-<h1> olá {{}} </h1>
+<h1> olá {{ auth()->user()->firstName }} </h1>
