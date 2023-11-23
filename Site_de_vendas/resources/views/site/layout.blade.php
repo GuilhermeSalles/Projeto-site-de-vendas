@@ -35,7 +35,7 @@
 
     <nav class="red">
         <div class="nav-wrapper container ">
-            <a href="#" class="brand-logo center">Curso Laravel</a>
+            <a href="#" class="brand-logo center">Loja</a>
             <ul id="nav-mobile" class="left" class="right hide-on-med-and-down">
                 <li><a href="{{ route('site.index') }}">Home</a></li>
                 <li><a href="" class="dropdown-trigger" data-target="dropdown1">Categorias <i
