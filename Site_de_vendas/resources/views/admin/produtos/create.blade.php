@@ -2,8 +2,10 @@
 <div id="create" class="modal">
     <div class="modal-content">
         <h4><i class="material-icons">card_giftcard</i> Novo produto</h4>
-        <form action="{{route('admin.produto.create')}}" method="POST" enctype="multipart/form-data" class="col s12">
+        <form action="{{route('admin.produtos.store')}}" method="POST" enctype="multipart/form-data" class="col s12">
             @csrf
+
+            <input type="hidden" name="id_user" value="{{ auth()->user()->id }}">
             <div class="row">
                 <div class="input-field col s6">
                     <input name="nome" placeholder="Placeholder" id="nome" type="text" class="validate">
@@ -19,7 +21,7 @@
                 </div>
 
                 <div class="input-field col s12">
-                    <select name="categoria">
+                    <select name="id_categoria">
                         <option value="" disabled selected>Escolha uma opção</option>
 
                         @foreach ($categorias as $c) 

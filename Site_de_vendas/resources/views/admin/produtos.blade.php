@@ -49,7 +49,7 @@
                 <tbody>
                     @foreach ($produtos as $produto)
                         <tr>
-                            <td><img src="https://gradle.org/images/gradle-400x400.png" class="circle "></td>
+                            <td><img src="{{ url("storage/{$produto->imagem}")}}" class="circle "></td>
                             <td>#{{ $produto->id }}</td>
                             <td>{{ $produto->nome }}</td>
                             <td>R$ {{ number_format($produto->preco, 2, ',', '.') }}</td>
