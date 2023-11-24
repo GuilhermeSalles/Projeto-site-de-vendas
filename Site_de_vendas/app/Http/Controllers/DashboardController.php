@@ -44,7 +44,7 @@ class DashboardController extends Controller
         //Preparar Array
         foreach ($catData as $cat) {
             $catNome[] = "'".$cat->nome."'";
-            $catTotal[] = $cat->produtos-count();
+            $catTotal[] = $cat->produtos->count();
         }
 
         //Formatar para chartJS
