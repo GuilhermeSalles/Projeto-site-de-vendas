@@ -50,8 +50,8 @@
                     <img src="{{ asset('img/office.jpg') }}" style="opacity: 0.5">
                 </div>
                 <a href="#user"><img class="circle" src="{{ asset('img/user.jpg') }}"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                <a href="#name"><span class="white-text name">{{ auth()->user()->firstName }}</span></a>
+                <a href="#email"><span class="white-text email">{{ auth()->user()->email }}</span></a>
             </div>
         </li>
 
