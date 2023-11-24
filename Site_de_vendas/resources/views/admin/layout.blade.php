@@ -29,6 +29,8 @@
     <script src="{{ asset('js/chart.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 
+    @stack('graficos')
+
 </body>
 
 </html>
