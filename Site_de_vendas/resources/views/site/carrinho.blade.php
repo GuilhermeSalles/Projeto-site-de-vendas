@@ -47,7 +47,7 @@
                 @foreach ($itens as $item)
                     <tbody>
                         <tr>
-                            <td><img src="https://gradle.org/images/gradle-400x400.png" alt="" width="70"
+                            <td><img src="{{ url("storage/{$item->imagem}")}}" alt="" width="70"
                                     class="responsive-img circle"></td>
                             <td>{{ $item->name }}</td>
                             <td>R$ {{ number_format($item->price, 2, ',', '.') }}</td>

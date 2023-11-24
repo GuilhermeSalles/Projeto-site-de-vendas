@@ -10,7 +10,7 @@
             <div class="col s12 m4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="https://gradle.org/images/gradle-400x400.png">
+                        <img src="{{ url("storage/{$produto->imagem}")}}">
 
                         <a href="{{ route('site.details', $produto->slug) }}" class="btn-floating halfway-fab waves-effect waves-light red"><i
                                 class="material-icons">visibility</i></a>

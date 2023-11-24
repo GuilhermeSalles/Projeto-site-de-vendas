@@ -7,7 +7,7 @@
     <div class="row container">
 
         <div class="col s12 m6">
-            <img src="https://gradle.org/images/gradle-400x400.png" alt="" class="responsive-img">
+            <img src="{{ url("storage/{$produto->imagem}")}}" alt="" class="responsive-img">
         </div>
 
         <div class="col s12 m6">
