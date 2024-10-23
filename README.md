@@ -20,3 +20,9 @@ Para instalar e configurar o Projeto-site-de-vendas, siga os passos abaixo:
     ```
 
 Estes comandos irão iniciar o servidor de desenvolvimento, criar as tabelas necessárias no banco de dados e popular o banco de dados com dados de teste.
+
+# 👤 Autor
+Guilherme Baltazar Vericimo de Sales
+
+<a href="https://www.linkedin.com/in/guilhermebaltazar-v/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+<a href="https://instagram.com/yguilhermeb" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
