@@ -19,11 +19,3 @@ Para instalar e configurar o Projeto-site-de-vendas, siga os passos abaixo:
     ```
 
 Estes comandos irão iniciar o servidor de desenvolvimento, criar as tabelas necessárias no banco de dados e popular o banco de dados com dados de teste.
-
-## Uso 🖥️
-
-Para entender melhor como usar o Projeto-site-de-vendas, veja o vídeo de demonstração disponível [aqui](#).
-
-## Licença 📄
-
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
